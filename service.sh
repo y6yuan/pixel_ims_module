@@ -13,6 +13,12 @@ insert_string=\
 "<boolean name=\"show_4g_for_lte_data_icon_bool\" value=\"true\" />\n"\
 "<boolean name=\"vonr_enabled_bool\" value=\"true\" />\n"\
 "<boolean name=\"vonr_setting_visibility_bool\" value=\"true\" />\n"\
+"<int-array name=\"5g_nr_ssrsrp_thresholds_int_array\" num=\"4\">\n"\
+"<item value=\"-120\" />\n"\
+"<item value=\"-113\" />\n"\
+"<item value=\"-103\" />\n"\
+"<item value=\"-90\" />\n"\
+"</int-array>\n"\
 "<!--PIXEL_IMS_MODULE_END-->"
 
 find $file_path -maxdepth 1 -type f -name "carrierconfig-com.google.android.carrier*.xml" ! -name "*nosim*" | while read -r file; do
